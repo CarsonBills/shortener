@@ -1,31 +1,32 @@
 class LinksController < ApplicationController
 
   def show
+    @link = Link.find(params[:id].to_i(36))
+    redirect_to "http://"+@link.original
+  end
+
+  def index
+
   end
 
   def new
     @link = Link.new
   end
 
-  # POST /links
-  # POST /links.json
   def create
     @link = Link.new(link_params)
 
     respond_to do |format|
       if @link.save
-        format.html { redirect_to @link, notice: 'Link was successfully created.' }
-        format.json { render :show, status: :created, location: @link }
+        format.html { render :show, notice: 'Link was successfully created.' }
       else
         format.html { render :new }
-        format.json { render json: @link.errors, status: :unprocessable_entity }
       end
     end
   end
 
 
   private
-    # Never trust parameters from the scary internet, only allow the white list through.
     def link_params
       params.require(:link).permit(:original, :clicks)
     end
