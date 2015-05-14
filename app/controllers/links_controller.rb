@@ -8,12 +8,9 @@ class LinksController < ApplicationController
     end
   end
 
-  def index
-    @top_links = Link.order(clicks: :desc).first(100)
-  end
-
   def new
     @link = Link.new
+    @top_links = Link.order(clicks: :desc).first(100)
   end
 
   def create
