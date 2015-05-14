@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<p>The new short URL is <%= link_to link_url(@link), link_url(@link) %>.</p>
+
 <p>
   <strong>Original:</strong>
   <%= @link.original %>
