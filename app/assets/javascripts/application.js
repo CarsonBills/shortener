@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require handlebars-v3.0.3
 //= require turbolinks
+//= require scripts
 //= require_tree .

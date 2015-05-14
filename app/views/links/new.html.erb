@@ -2,7 +2,7 @@
 
 <%= render 'form' %>
 
-<p> Top Links by Popularity: </p>
+<p class="top"> Click HERE for top links by Popularity: </p>
 <table>
   <thead>
     <tr>
@@ -23,3 +23,11 @@
     <% end %>
   </tbody>
 </table>
+
+<script>
+
+	$(function(){
+		loadTopLinks()
+	})
+
+</script>
