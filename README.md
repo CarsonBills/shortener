@@ -3,9 +3,9 @@ Code Test 2 - URL shortener
 
 If you would like to set the application up locally, simply clone the repo down to your local machine run the following commands from the root directory (assuming that ruby is installed):
 
-$ rake db:create (to create the database that stores the submitted URLs)
-$ rake db:migrate (to create the Link model)
-$ rails server (to boot up your local server)
+$ rake db:create (to create the database that stores the submitted URLs).
+$ rake db:migrate (to create the Link model).
+$ rails server (to boot up your local server).
 
 The application was written with Ruby 2.1.2p95 and Rails 4.1.10
 
