@@ -11,6 +11,12 @@ $ rails server (to boot up your local server).
 
 The application was written with Ruby 2.1.2p95 and Rails 4.1.10
 
+
+To run the testing suite, from the root directory run:
+
+$ rspec spec
+
+
 Challenges Encountered: 
 
 Writing this application, I encountered a few issues. The first being generating the short link, especially the http:// and www that prepend many urls. Without a consistent pattern, the generated urls would sometimes not correctly redirect to external websites. I decided that using jquery validations to ensure a valid url is entered will suffice for the vast majority of use cases. 
