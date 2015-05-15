@@ -1,15 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="short">
+	<p id="notice"><%= notice %></p>
 
-<p>The new short URL is <%= link_to link_url(@link), link_url(@link) %></p>
+	<p>The new short URL is <br> <%= link_to link_url(@link), link_url(@link) %></p>
 
-<p>
-  <strong>Original:</strong>
-  <%= @link.original %>
-</p>
+	<p>
+	  <strong>Original:</strong>
+	  <%= @link.original %>
+	</p>
 
-<p>
-  <strong>Clicks:</strong>
-  <%= @link.clicks %>
-</p>
+	<p>
+	  <strong>Clicks:</strong>
+	  <%= @link.clicks %>
+	</p>
+</div>
 
-<%= link_to 'Back', links_path %>
+<div class="back">
+	<%= link_to 'Back', links_path %>
+</div>

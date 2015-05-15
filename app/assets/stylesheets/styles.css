@@ -36,3 +36,18 @@ h1 {
 	font-size: 1.5em;
 	margin: 0 auto;
 }
+
+.short {
+	width: 400px;
+	font-size: 1.5em;
+	background-color: #BFDEE2;
+	margin: 0 auto;
+}
+
+.back {
+	background-color: #65B3BD;
+	width: 100px;
+	margin: auto;
+	font-size: 1.5em;
+	margin-top: 2em;
+}
