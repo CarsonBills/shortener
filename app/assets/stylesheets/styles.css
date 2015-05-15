@@ -27,6 +27,9 @@ h1 {
 	display: none;
   text-align: left;   
 }
+th, td {
+	font-size: 20px
+}
 
 .top { 
 	width: 20%;
