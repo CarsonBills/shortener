@@ -5,3 +5,11 @@ function loadTopLinks(){
 		$("table").toggle( 300, function(){});
 	});
 }
+
+function validate(){
+	  $("#urlForm").validate({
+	  errorPlacement: function(error, element) {
+	    error.insertAfter(".field");
+	  }
+	});
+}

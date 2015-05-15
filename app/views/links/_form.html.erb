@@ -1,6 +1,6 @@
 <%= form_for(@link, :html => { :id => "urlForm"}) do |f| %>
   <div class="field">
-    <%= f.text_field :original, :class => "required url", :placeholder => "URL goes here!" %>
+    <%= f.text_field :original, :class => "required url", :placeholder => "http://www.example.com" %>
   </div>
   <div class="actions">
     <%= f.submit "Shorten!", :class => "shorten" %>
