@@ -2,7 +2,7 @@ class LinksController < ApplicationController
 
   def show
     @link = Link.find(params[:id].to_i(36))
-    if redirect_to "http://"+@link.original
+    if redirect_to @link.original
       @link.increment
       @link.save
     end
