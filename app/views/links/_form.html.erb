@@ -12,10 +12,9 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :original %><br>
-    <%= f.text_field :original %>
+    <%= f.text_field :original, :placeholder => "URL goes here!" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Shorten!", :class => "shorten" %>
   </div>
 <% end %>

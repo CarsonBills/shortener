@@ -1,0 +1,38 @@
+
+body {
+	background-color: #E6F3F3;
+	text-align: center;
+	color: black;
+}
+.navbar-default {
+	background-color: #BFDEE2;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+.field {
+	margin: 15px;
+}
+.shorten {
+	margin: 30px;
+	background-color: #65B3BD;
+	border-style: none;
+	font-weight: bold;
+	font-size: 2em;
+	color: black;
+}
+
+.table {
+	display: none;
+  text-align: left;   
+}
+
+.top { 
+	width: 20%;
+	background-color: #BFDEE2; 
+	cursor: pointer; 
+	cursor: hand; 
+	font-size: 1.5em;
+	margin: 0 auto;
+}

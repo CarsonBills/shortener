@@ -1,15 +1,15 @@
-<h1>New link</h1>
+
 
 <%= render 'form' %>
-
-<p class="top"> Click HERE for top links by Popularity: </p>
-<table>
+<div class="top"
+  <p> Top Links: </p>
+</div>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Original</th>
       <th>Shortened</th>
       <th>Clicks</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -27,7 +27,7 @@
 <script>
 
 	$(function(){
-		loadTopLinks()
+		loadTopLinks();
 	})
 
 </script>

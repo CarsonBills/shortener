@@ -1,8 +1,8 @@
 console.log("scripts loaded!")
 
 function loadTopLinks(){
-	$("table").hide()
-	$(".top").on("click", function(){
-		$("table").fadeIn(500);
+	$(".top").click(function(){
+		$("table").toggle( 300, function(){
+		});
 	});
 }
