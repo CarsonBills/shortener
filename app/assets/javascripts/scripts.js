@@ -7,9 +7,10 @@ function loadTopLinks(){
 }
 
 function validate(){
-	  $("#urlForm").validate({
+	$("#urlForm").validate({
 	  errorPlacement: function(error, element) {
 	    error.insertAfter(".field");
 	  }
 	});
+	$(".shorten").fadeIn(200);
 }
