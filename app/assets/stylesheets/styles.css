@@ -1,16 +1,28 @@
 
-body {
-	background-color: #E6F3F3;
+html body {
+	background-color: #BFDEE2;
 	text-align: center;
 	color: black;
-}
-.navbar-default {
-	background-color: #BFDEE2;
+	font-family: "Montserrat", "sans-serif";
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Comfortaa', "Normal"
 }
+
+.content {
+	margin-top: 150px;
+}
+
+.header {
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.testing {
+}
+
 .field {
 	margin: 15px;
 }
@@ -18,16 +30,20 @@ h1 {
 	margin: 30px;
 	background-color: #65B3BD;
 	border-style: none;
-	font-weight: bold;
 	font-size: 2em;
 	color: black;
 }
 
 .table {
 	display: none;
-  text-align: left;   
+  text-align: left;
 }
-th, td {
+
+th {
+	font-size: 20px;
+}
+
+td {
 	font-size: 20px
 }
 
@@ -54,3 +70,23 @@ th, td {
 	font-size: 1.5em;
 	margin-top: 2em;
 }
+
+.shortener {
+	position: absolute;
+	left: 34%;
+	top: 40%;
+	width: 265px;
+}
+
+.carson {
+	position: absolute;
+	left: 35%;
+	top: 20%;
+}
+
+.bills {
+	position: absolute;
+	left: 35%;
+	top: 30%;
+}
+

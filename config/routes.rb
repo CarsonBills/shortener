@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get "/:id" => "links#show", :as => "link"
-  root "links#new", :as => "new_link"
   post "/" => "links#create", :as => "links"
+  get "links/new", :as => "new_link"
+  root "links#new"
 end

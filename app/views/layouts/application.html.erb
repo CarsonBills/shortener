@@ -2,15 +2,46 @@
 <html>
 <head>
   <title>CmbillsShortener</title>
+  <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<%= render "header" %>
-	<div class="container">
+	<div class="header">
+		<%= render "header" %>
+	</div>
+	<div class="content">
 		<%= yield %>
 	</div>
+	<script>	
+		$(function(){
+			$(".content").hide()
+			loadLanding()
+
+
+			
+			setTimeout(function(){
+				$(".bills").animate({
+					top: "2%",
+				}, 500)
+				$(".carson").animate({
+					top: "2%",
+				}, 500)
+				$(".shortener").animate({
+					top: "2%",
+				}, 500)
+				setTimeout(function(){
+					$(".header").css("height", "20%")
+					$(".content").fadeIn(800)
+				}, 1100)
+
+			}, 3500 );
+
+
+
+		});
+	</script>
 </body>
 </html>

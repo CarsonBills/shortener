@@ -22,6 +22,10 @@ class LinksController < ApplicationController
       end
   end
 
+  def landing
+
+  end
+
 
   private
     def link_params
