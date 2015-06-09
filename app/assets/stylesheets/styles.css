@@ -20,9 +20,6 @@ h1 {
 	width: 100%;
 }
 
-.testing {
-}
-
 .field {
 	margin: 15px;
 }
@@ -57,11 +54,12 @@ td {
 }
 
 .short {
-	width: 400px;
+	width: 100%;
 	font-size: 1.5em;
 	background-color: #BFDEE2;
-	margin: 0 auto;
+	margin: auto;
 }
+
 
 .back {
 	background-color: #65B3BD;
@@ -90,3 +88,21 @@ td {
 	top: 30%;
 }
 
+.new_link_shortener {
+	position: absolute;
+	left: 41%;
+	top: 2%;
+	width: 265px;
+}
+
+.new_link_carson {
+	position: absolute;
+	left: 31%;
+	top: 2%;
+}
+
+.new_link_bills {
+	position: absolute;
+	left: 35%;
+	top: 2%;
+}

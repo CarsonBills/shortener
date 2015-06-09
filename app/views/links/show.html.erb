@@ -1,14 +1,14 @@
 <div class="short">
 	<p id="notice"><%= notice %></p>
 
-	<p>The shortened URL is <br> <%= link_to link_url(@link), link_url(@link) %></p>
+	<p class="short_info">The shortened URL is <br> <%= link_to link_url(@link), link_url(@link) %></p>
 
-	<p>
-	  <strong>Original:</strong>
+	<p class="short_info original">
+	  <strong>Original:</strong><br>
 	  <%= @link.original %>
 	</p>
 
-	<p>
+	<p class="short_info">
 	  <strong>Clicks:</strong>
 	  <%= @link.clicks %>
 	</p>

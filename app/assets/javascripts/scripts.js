@@ -42,4 +42,19 @@ function loadLanding(){
 			 left: "41%"
 			}, 500)
 		}, 3000);
+		setTimeout(function(){
+		$(".bills").animate({
+			top: "2%",
+		}, 500)
+		$(".carson").animate({
+			top: "2%",
+		}, 500)
+		$(".shortener").animate({
+			top: "2%",
+		}, 500)
+		setTimeout(function(){
+			$(".header").css("height", "20%")
+			$(".content").fadeIn(800)
+		}, 1100)
+	}, 3500 );
 }

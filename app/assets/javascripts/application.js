@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require wow
 //= require turbolinks
 //= require jquery.validate
 //= require scripts

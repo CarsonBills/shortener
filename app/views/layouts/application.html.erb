@@ -9,39 +9,29 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="header">
-		<%= render "header" %>
-	</div>
-	<div class="content">
-		<%= yield %>
-	</div>
-	<script>	
-		$(function(){
-			$(".content").hide()
-			loadLanding()
-
-
-			
-			setTimeout(function(){
-				$(".bills").animate({
-					top: "2%",
-				}, 500)
-				$(".carson").animate({
-					top: "2%",
-				}, 500)
-				$(".shortener").animate({
-					top: "2%",
-				}, 500)
-				setTimeout(function(){
-					$(".header").css("height", "20%")
-					$(".content").fadeIn(800)
-				}, 1100)
-
-			}, 3500 );
-
-
-
-		});
-	</script>
+	<% if params["action"]=="create" %>
+		<div class="header">
+			<%= render "link_header" %>
+		</div>
+		<div class="content">
+			<%= yield %>
+		</div>
+		<script>
+			$(".disappear").hide()
+		</script>
+	<% else %>
+		<div class="header">
+			<%= render "header" %>
+		</div>
+		<div class="content">
+			<%= yield %>
+		</div>
+		<script>	
+			$(function(){
+				$(".content").hide()
+				loadLanding()
+			});
+		</script>
+	<% end %>
 </body>
 </html>
